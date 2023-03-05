@@ -1,6 +1,6 @@
-import debounce from 'lodash.debounce';
 import { createPagination } from './pagination.js';
 import { refs } from './refs.js';
+import debounce from 'lodash.debounce';
 
 export const BASE_URL = 'https://restcountries.com/v3.1/';
 const DEBOUNCE_DELAY = 300;

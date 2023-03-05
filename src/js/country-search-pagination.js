@@ -1,4 +1,4 @@
-import debounce from 'lodash.debounce';
+// import debounce from 'lodash.debounce';
 import { createPagination } from './pagination.js';
 import { refs } from './refs.js';
 import '../css/pagination.css';
@@ -120,7 +120,8 @@ const startPage = () => {
 };
 startPage();
 
-refs.searchField.addEventListener(
-    'input',
-    debounce(onSearchInput, DEBOUNCE_DELAY)
-);
+// refs.searchField.addEventListener(
+//     'input',
+//     debounce(onSearchInput, DEBOUNCE_DELAY)
+// );
+refs.searchField.addEventListener('input', onSearchInput);

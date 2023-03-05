@@ -1,5 +1,5 @@
-import { createPagination } from './pagination.js';
-import { refs } from './refs.js';
+import { createPagination } from './pagination';
+import { refs } from './refs';
 import debounce from 'lodash.debounce';
 
 export const BASE_URL = 'https://restcountries.com/v3.1/';

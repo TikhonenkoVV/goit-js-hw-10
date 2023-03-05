@@ -1,4 +1,4 @@
-import { refs } from './refs.js';
+import { refs } from './refs';
 import {
     BASE_URL,
     startUrl,
@@ -6,8 +6,8 @@ import {
     startCountryCount,
     countryCount,
     renderCountriesList,
-} from './country-search-pagination.js';
-import { calcPageCount } from './page-count.js';
+} from './country-search-pagination';
+import { calcPageCount } from './page-count';
 
 const onDotClick = e => {
     let url = startUrl;
@@ -105,5 +105,3 @@ export const createPagination = (elementsLength, page) => {
     });
     refs.paginationBox.addEventListener('click', onDotClick);
 };
-
-console.log('Hi!');
